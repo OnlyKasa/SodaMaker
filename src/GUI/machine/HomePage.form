@@ -60,6 +60,9 @@
         </Property>
         <Property name="name" type="java.lang.String" value="Oder" noResource="true"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="HomePage_jTabbedPane1"/>
+      </AuxValues>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
@@ -80,7 +83,7 @@
               <JTabbedPaneConstraints tabName="    Home Page" toolTip="">
                 <Property name="tabTitle" type="java.lang.String" value="    Home Page"/>
                 <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\HocTap\java\SodaMaker\src\GUI\machine\TrangChu.png"/>
+                  <Image iconType="3" name="/GUI/machine/TrangChu.png"/>
                 </Property>
                 <Property name="tabToolTip" type="java.lang.String" value=""/>
               </JTabbedPaneConstraints>
@@ -97,7 +100,7 @@
                       <Component id="jButtonLogin" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="LabelHome" alignment="0" pref="546" max="32767" attributes="0"/>
+                  <Component id="LabelHome" alignment="0" pref="538" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -168,7 +171,7 @@
               <JTabbedPaneConstraints tabName="Oder Drinking" toolTip="">
                 <Property name="tabTitle" type="java.lang.String" value="Oder Drinking"/>
                 <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\HocTap\java\SodaMaker\src\GUI\machine\ChonNuoc.png"/>
+                  <Image iconType="3" name="/GUI/machine/ChonNuoc.png"/>
                 </Property>
                 <Property name="tabToolTip" type="java.lang.String" value=""/>
               </JTabbedPaneConstraints>
@@ -219,7 +222,7 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace pref="47" max="32767" attributes="0"/>
+                                      <EmptySpace pref="45" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="jButtonOLong1" min="-2" pref="85" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -635,7 +638,7 @@
               <JTabbedPaneConstraints tabName="        Pay       " toolTip="">
                 <Property name="tabTitle" type="java.lang.String" value="        Pay       "/>
                 <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\HocTap\java\SodaMaker\src\GUI\machine\ThanhToan.png"/>
+                  <Image iconType="3" name="/GUI/machine/ThanhToan.png"/>
                 </Property>
                 <Property name="tabToolTip" type="java.lang.String" value=""/>
               </JTabbedPaneConstraints>
@@ -646,7 +649,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="16" pref="24" max="32767" attributes="0"/>
+                      <EmptySpace min="16" pref="20" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -683,22 +686,34 @@
                           <Component id="jScrollPane4" alignment="1" min="-2" pref="305" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                              <Component id="sumOfMoneyOutput" min="-2" pref="83" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnExit" min="-2" pref="101" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane1" min="-2" pref="186" max="-2" attributes="0"/>
-                                  <Component id="jButtonOrder" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                                      <Component id="sumOfMoneyOutput" min="-2" pref="83" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="btnExit" min="-2" pref="101" max="-2" attributes="0"/>
+                                          <Component id="jButtonOrder" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
+                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="label4" min="-2" pref="136" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="label4" min="-2" pref="136" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jScrollPane1" min="-2" pref="186" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
@@ -974,7 +989,7 @@
               <JTabbedPaneConstraints tabName="   Information">
                 <Property name="tabTitle" type="java.lang.String" value="   Information"/>
                 <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\HocTap\java\SodaMaker\src\GUI\machine\ThongTin.png"/>
+                  <Image iconType="3" name="/GUI/machine/ThongTin.png"/>
                 </Property>
               </JTabbedPaneConstraints>
             </Constraint>
@@ -989,7 +1004,7 @@
                           <Component id="btnFB" min="-2" pref="57" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="225" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="311" max="32767" attributes="0"/>
+                      <EmptySpace pref="303" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1014,7 +1029,7 @@
             <Component class="javax.swing.JButton" name="btnFB">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="E:\HocTap\java\SodaMaker\src\GUI\machine\FaceBook_64x64.png"/>
+                  <Image iconType="3" name="/GUI/machine/FaceBook_64x64.png"/>
                 </Property>
               </Properties>
               <Events>

@@ -9,10 +9,9 @@ import Control.OrderPotation;
 import Control.UpdateMoney;
 import Control.UpdatePotation;
 import Produce.SodaMoney.ProdureMoney;
-import doan.quangnguyen.sodamaker.PaperMoney;
 import java.awt.Desktop;
+import java.awt.HeadlessException;
 import java.awt.Image;
-import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -150,7 +149,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addComponent(jButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
-            .addComponent(LabelHome, javax.swing.GroupLayout.DEFAULT_SIZE, 546, Short.MAX_VALUE)
+            .addComponent(LabelHome, javax.swing.GroupLayout.DEFAULT_SIZE, 538, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,7 +163,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addGap(56, 56, 56))
         );
 
-        jTabbedPane1.addTab("    Home Page", new javax.swing.ImageIcon("E:\\HocTap\\java\\SodaMaker\\src\\GUI\\machine\\TrangChu.png"), jPanel1, ""); // NOI18N
+        jTabbedPane1.addTab("    Home Page", new javax.swing.ImageIcon(getClass().getResource("/GUI/machine/TrangChu.png")), jPanel1, ""); // NOI18N
 
         jPanel2.setBackground(java.awt.SystemColor.textHighlight);
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -380,7 +379,7 @@ public class HomePage extends javax.swing.JFrame {
                                 .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jButtonOLong1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -428,7 +427,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Oder Drinking", new javax.swing.ImageIcon("E:\\HocTap\\java\\SodaMaker\\src\\GUI\\machine\\ChonNuoc.png"), jPanel2, ""); // NOI18N
+        jTabbedPane1.addTab("Oder Drinking", new javax.swing.ImageIcon(getClass().getResource("/GUI/machine/ChonNuoc.png")), jPanel2, ""); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(250, 200, 100));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -518,7 +517,7 @@ public class HomePage extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(16, 24, Short.MAX_VALUE)
+                .addGap(16, 20, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -547,18 +546,25 @@ public class HomePage extends javax.swing.JFrame {
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(sumOfMoneyOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonOrder)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(65, 65, 65)
+                                .addComponent(sumOfMoneyOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButtonOrder))))
+                        .addGap(52, 52, 52))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39))))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(39, 39, 39))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -606,14 +612,14 @@ public class HomePage extends javax.swing.JFrame {
                 .addGap(11, 11, 11))
         );
 
-        jTabbedPane1.addTab("        Pay       ", new javax.swing.ImageIcon("E:\\HocTap\\java\\SodaMaker\\src\\GUI\\machine\\ThanhToan.png"), jPanel3, ""); // NOI18N
+        jTabbedPane1.addTab("        Pay       ", new javax.swing.ImageIcon(getClass().getResource("/GUI/machine/ThanhToan.png")), jPanel3, ""); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(250, 200, 100));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setText("Call Number : 01635220904 - MrYiYi");
 
-        btnFB.setIcon(new javax.swing.ImageIcon("E:\\HocTap\\java\\SodaMaker\\src\\GUI\\machine\\FaceBook_64x64.png")); // NOI18N
+        btnFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/machine/FaceBook_64x64.png"))); // NOI18N
         btnFB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFBActionPerformed(evt);
@@ -629,7 +635,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnFB, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(311, Short.MAX_VALUE))
+                .addContainerGap(303, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -641,7 +647,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap(227, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("   Information", new javax.swing.ImageIcon("E:\\HocTap\\java\\SodaMaker\\src\\GUI\\machine\\ThongTin.png"), jPanel4); // NOI18N
+        jTabbedPane1.addTab("   Information", new javax.swing.ImageIcon(getClass().getResource("/GUI/machine/ThongTin.png")), jPanel4); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -664,9 +670,8 @@ public class HomePage extends javax.swing.JFrame {
             Login frame=new Login();
             frame.setSize(300,100);
             frame.pack();
-          //  frame.setLocationRelativeTo(null);       //cua so ve chinh giua 
+            frame.setLocationRelativeTo(null);       //cua so ve chinh giua 
             frame.setVisible(true);
-            
             }
             catch(Exception e)
             {JOptionPane.showMessageDialog(null, e.getMessage());
@@ -761,7 +766,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -785,7 +790,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -808,7 +813,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -831,7 +836,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -854,7 +859,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        }catch(Exception e)
+        }catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -877,7 +882,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -900,7 +905,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -923,7 +928,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -946,7 +951,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -969,7 +974,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -992,7 +997,7 @@ public class HomePage extends javax.swing.JFrame {
             {JOptionPane.showMessageDialog(this,"Potation is over!!!",
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
-        } catch(Exception e)
+        } catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -1110,7 +1115,7 @@ public class HomePage extends javax.swing.JFrame {
             "ERROR",JOptionPane.ERROR_MESSAGE);
             }
         }
-        catch(Exception e)
+        catch(SQLException | HeadlessException e)
         {
             JOptionPane.showMessageDialog(this,e.getMessage(),
             "ERROR",JOptionPane.ERROR_MESSAGE);
